@@ -1,12 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
-    height: 100vh;
+    height: 100%vh;
     background-color: #FFF;
     background-image: url(./img/background.png);
     background-repeat: no-repeat;
@@ -14,24 +14,34 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
     height: 10vh;
 }
 
-.menu{
-    width: 100vw;
+.menu {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     place-content: center;
-    gap: 110px;
+    gap: 10px;
 }
 
-main{
+.menu > * {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    padding: 0 20px;
+}
+
+main {
+    display: flex;
     align-items: center;
     justify-content: center;
+    height: 90vh;
 }
 
-.lata{
-
-    
+.lata {
+    max-width: 50%;
+    height: auto;
 }
+
+
